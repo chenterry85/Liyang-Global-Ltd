@@ -111,12 +111,20 @@ i.fa {
   color: #4af;
 }
 
+.fa-youtube:hover {
+  color: #dd1e1e;
+}
+
 .fa-facebook:hover {
   color: #04a;
 }
 
 .fa-instagram:hover {
   color: #FF748C;
+}
+
+.fa-flickr:hover {
+  color: #4c6ca5;
 }
 
 hr.dash {
@@ -182,7 +190,7 @@ hr.dash {
 
 .article{
   padding-top: 20px;
-  
+
 }
 
 .article-image{
@@ -203,4 +211,8 @@ hr.dash {
   color: #5c5b5b;
   text-align: left;
   margin-top: 0px;
+}
+
+.contact-info-text{
+  font-size: 12px;
 }
