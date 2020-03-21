@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 
@@ -82,18 +83,29 @@
 
           <!-- Blog entry 7-->
           <div class="w3-card-4 w3-margin w3-white article">
-            <img src="News_photo/Sport_model-900x385.jpg" style="width:100%">
-            <div class="w3-container">
-              <h3><b>LIYANG ODM EBIKES POWERED BY ACER!!!</b></h3>
-              <h5><span class="w3-opacity">April 7, 2014</span></h5>
+            <img src="article_files/image/a7.jpg" class="article-image">
+            <div class="w3-container w3-left">
+              <p class="article-title">Liyang ODM eBikes powered by Acer!!!</p>
+              <p class="article-date">April 7, 2014</p>
             </div>
 
             <div class="w3-container">
-              <p id="article_7"></p>
+
+              <!-- BEGIN preview content-->
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Liyang Global &amp; Acer Group have joined forces to develop complete eBike systems…</span></div>
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">
+                <b style="font-weight: bold;">
+                  <br>
+                </b>With the electric bike market growing globally – we have a very developed strong collection of eBikes for all categories: eGravel – eHybrid – eMTB – eRoad – eCargo and eFolding eBikes – we are trying to bring design: innovation – performance and make it affordable with quality branded parts &amp; powered by Acer – please find attached a file with a few framesets / eBikes designs to assess…
+              </span>
+              <p style="margin: 1.07143em 0px;"><span style="font-family: arial, helvetica, sans-serif;">With Acer advanced technology one of the worlds largest computer vendors – we have been working with Acer to developing eBike complete systems with motors – batteries – onboard computer provides the rider with&nbsp;many features&nbsp;– exclusive to Liyang we are ready with the rear hub motor and centre motor will be ready Q2…</span></p>
+            </div>
+            <!-- END preview content-->
+
               <div class="w3-row">
                 <div class="w3-col m12 s12" style="padding-top: 20px; padding-bottom: 20px">
                   <button class="w3-button w3-round-large w3-padding w3-white w3-border w3-left" onclick="navigateToArticlePage('7')">
-                    <b>READ MORE »</b>
+                    READ MORE »
                   </button>
                 </div>
               </div>
@@ -163,26 +175,36 @@
     </div>
 
     <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64">
-      <h3 class="w3-center">JOIN US</h3>
-        <div class="w3-center">
-          <div class="w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Taipei City, Taiwan<br>
-            <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +886 970 939 492<br>
-            <i class="fa fa-envelope w3-hover-text-black" style="width:30px"></i> Email: silex@gmail.com<br>
-          </div>
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
-          <div class="w3-center"><a href="mailto: club.globalize@gmail.com" class="w3-btn w3-section">SEND</a></div>
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img src="image/office.jpg" class="w3-image w3-round" style="width:100%; margin-top:25px;">
         </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Taipei, Taiwan<br>
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+          </div>
+          <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-right w3-section" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
@@ -197,7 +219,7 @@
           <i class="fa fa-instagram fa-2x"></i>
         </a>
       </div>
-      <p class="w3-half">Made with <span class="heart-icon">❤</span> by Terry Chen & Louis Chou</a></p>
+      <p class="w3-half">Made with <span class="heart-icon">❤</span> by Terry Chen</a></p>
     </footer>
 
   </body>

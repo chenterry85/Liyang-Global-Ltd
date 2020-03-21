@@ -111,9 +111,8 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
 }
 
-
-function navigateToArticlePage(article_index){
-  let file = "News_text/article" + article_index + ".html"
+function navigateToArticlePage(index){
+  let file = "article_files/article"+index+".html"
   window.open(file,"_self")
   console.log(file)
 }
