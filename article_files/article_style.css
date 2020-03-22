@@ -107,8 +107,13 @@ i.fa {
   taransition: color 1s;
 }
 
-.fa-google:hover {
+
+.fa-twitter:hover {
   color: #4af;
+}
+
+.fa-youtube:hover {
+  color: #dd1e1e;
 }
 
 .fa-facebook:hover {
@@ -117,6 +122,10 @@ i.fa {
 
 .fa-instagram:hover {
   color: #FF748C;
+}
+
+.fa-flickr:hover {
+  color: #4c6ca5;
 }
 
 hr.dash {
@@ -155,6 +164,20 @@ hr.dash {
   line-height: 1.7;
 }
 
+.article-title{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 0px;
+
+}
+
+.article-date {
+  font-size: 12px;
+  color: #808285;
+  text-align: left;
+  margin-top: 0px;
+}
 
 .media{
   text-align:center;

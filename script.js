@@ -111,8 +111,64 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
 }
 
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavBar")
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar " + "w3-navbar " + "w3-wide" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        console.log(navbar)
+    }
+}
+
 function navigateToArticlePage(index){
   let file = "article_files/article"+index+".html"
   window.open(file,"_self")
-  console.log(file)
 }
+
+//scroll animation
+function scrollToTop(scrollDuration) {
+    var scrollStep = -window.scrollY / (scrollDuration / 15),
+        scrollInterval = setInterval(function(){
+        if ( window.scrollY != 0 ) {
+            window.scrollBy( 0, scrollStep );
+        }
+        else clearInterval(scrollInterval);
+    },15);
+}
+
+var cursorY;
+
+//detect Scrolling
+// window.onscroll = function (e) {
+//   var offset = window.pageYOffset
+//   var offset_from_bottom = document.documentElement.scrollHeight - window.pageYOffset
+//
+//   //console.log(offset)
+//   //console.log(offset_from_bottom)
+//
+//   if((offset>=900 && offset<=1438) || (offset>=1831 && offset_from_bottom >= 1164)){
+//     for(var i = 0; i < 4; i++){
+//       document.getElementsByClassName("w3-bar-item")[i].style.color="#444"
+//     }
+//   }else{
+//     for(var i = 0; i < 4; i++){
+//       document.getElementsByClassName("w3-bar-item")[i].style.color="#FFFFFF"
+//     }
+//   }
+//
+// }
+
+// //detect cursor location
+// window.onload = function(){
+//   if (window.Event) {
+// 	   document.captureEvents(Event.MOUSEMOVE)
+// 	}
+// 	document.onmousemove = cursorYLocation
+// }
+//
+// function setcursorY()(e){
+//   cursorY = (window.Event) ? e.pageY : event.clientY
+// }

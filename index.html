@@ -18,21 +18,17 @@
 
   </head>
   <body>
+
+    <!--Navbar-->
     <div class="w3-top">
-      <ul class="w3-navbar w3-wide">
-        <li class="w3-bar-item" id="nav-company-title">
-          <a href="#home" class="w3-padding-large"><b>LIYANG</b> GLOBAL</a>
-        </li>
-        <li class="w3-hide-small w3-right w3-bar-item">
-          <a href="#contact" class="w3-padding-large">Contact</a>
-        </li>
-        <li class="w3-hide-small w3-right w3-bar-item">
-          <a href="#team" class="w3-padding-large">Team</a>
-        </li>
-        <li class="w3-hide-small w3-right w3-bar-item">
-          <a href="#about" class="w3-padding-large">About</a>
-        </li>
-      </ul>
+      <div class="w3-bar w3-navbar w3-wide" id="myNavBar">
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large" id="nav-company-title" onclick="scrollToTop(500)"><b>LIYANG</b> GLOBAL</a>
+        <a href="#contact" class="w3-hide-small w3-right w3-bar-item w3-button w3-bar-item w3-padding-large">Contact</a>
+        <a href="https://sites.google.com/liyangbikes.com/home-english/home" class="w3-hide-small w3-right w3-bar-item w3-button w3-bar-item w3-padding-large">Products</a>
+        <a href="#about" class="w3-hide-small w3-right w3-bar-item w3-button w3-bar-item w3-padding-large">About</a>
+      </div>
+
+      
     </div>
 
     <!-- First Parallax Image with Logo Text -->
@@ -43,14 +39,14 @@
     <div class="w3-display-middle" >
       <p class="w3-center w3-wide" id="main-display-text" >LIYANG</p>
       <p class="w3-center w3-wide" id="main-display-subtext" >Global Bicycle Tailor Service</p>
-        <a href = "login.html" style="text-decoration:none">
+        <a href = "https://sites.google.com/liyangbikes.com/home-english/home" style="text-decoration:none">
           <p class="w3-round-large w3-center w3-padding-large w3-black w3-wide w3-animate-opacity" id="browse-btn"> >> Browse</p>
         </a>
     </div>
 
     <!-- About section -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-      <h2 class="w3-center paragraph-title">ABOUT</h2>
+      <h2 class="paragraph-title">ABOUT</h2>
       <hr class="dash">
       <div class = "paragraph-text">
         <p>
@@ -68,14 +64,46 @@
       </div>
     </div>
 
-    <!-- Second Parallax Image with Portfolio Text -->
+
+
+
+
+    <!-- Second Parallax Image with Facility Text -->
     <div class="bgimg-2 w3-display-container">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">MANUFACTURE</span>
+      </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="team">
+      <h2 class="paragraph-title">Facility</h2>
+      <hr class="dash">
+      <div class="paragraph-text">
+        <p>We have multi locations for manufacturing:</p>
+        <ul>
+          <li>New Taipei City High End Assembly Plant, Taiwan</li>
+          <li>Shenzhen Frame Precision Machining Plant, China</li>
+          <li>Hangzhou Kids/Juvenile Bikes Production Plant, China</li>
+          <li>Tianjin Frame Precision Machining Plant, China</li>
+          <li>L.Y.G Carbon fiber frame Composite Plant, China</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container">
       <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-light-grey w3-wide">NEWS UPDATE</span>
       </div>
     </div>
 
-    <!-- News section -->
+    <!-- NEWS UPDATE section -->
     <div class="w3-content w3-container w3-row">
       <div class="w3-row">
         <!-- Blog entries -->
@@ -114,25 +142,35 @@
           <hr>
 
           <!-- Blog entry 6-->
-          <div class="w3-card-4 w3-margin w3-white">
-            <div class="w3-container">
-              <h3><b>BLOG ENTRY</b></h3>
-              <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+          <div class="w3-card-4 w3-margin w3-white article">
+            <div class="w3-container w3-left">
+              <p class="article-title">電動助力車出口量大增</p>
+              <p class="article-date">April 7, 2014</p>
             </div>
 
             <div class="w3-container">
-              <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-                tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+              <!-- BEGIN preview content-->
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Liyang Global &amp; Acer Group have joined forces to develop complete eBike systems…</span></div>
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">
+                <b style="font-weight: bold;">
+                  <br>
+                </b>With the electric bike market growing globally – we have a very developed strong collection of eBikes for all categories: eGravel – eHybrid – eMTB – eRoad – eCargo and eFolding eBikes – we are trying to bring design: innovation – performance and make it affordable with quality branded parts &amp; powered by Acer – please find attached a file with a few framesets / eBikes designs to assess…
+              </span>
+              <p style="margin: 1.07143em 0px;"><span style="font-family: arial, helvetica, sans-serif;">With Acer advanced technology one of the worlds largest computer vendors – we have been working with Acer to developing eBike complete systems with motors – batteries – onboard computer provides the rider with&nbsp;many features&nbsp;– exclusive to Liyang we are ready with the rear hub motor and centre motor will be ready Q2…</span></p>
+            </div>
+            <!-- END preview content-->
+
               <div class="w3-row">
-                <div class="w3-col m8 s12">
-                  <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-                </div>
-                <div class="w3-col m4 w3-hide-small">
-                  <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+                <div class="w3-col m12 s12" style="padding-top: 20px; padding-bottom: 20px">
+                  <button class="w3-button w3-round-large w3-padding w3-white w3-border w3-left" onclick="navigateToArticlePage('7')">
+                    READ MORE »
+                  </button>
                 </div>
               </div>
             </div>
           </div>
+          <hr>
 
           <!-- Blog entry 5-->
           <div class="w3-card-4 w3-margin w3-white">
@@ -168,7 +206,7 @@
       </div>
     </div>
 
-    <div class="bgimg-3 w3-display-container" id="contact">
+    <div class="bgimg-4 w3-display-container" id="contact">
       <div class="w3-display-middle">
         <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
       </div>
@@ -225,7 +263,11 @@
           <i class="fa fa-flickr fa-2x"></i>
         </a>
       </div>
-      <p class="w3-half">Made with <span class="heart-icon">❤</span> by Terry Chen</a></p>
+      <div class="w3-half">
+        <a href="#home" onclick="scrollToTop(500)">
+          <p>@Liyang Global Ltd - Global Bike Tailor Service.</p>
+        </a>
+      </div>
     </footer>
 
   </body>

@@ -21,7 +21,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
     opacity: 0.7;
     background-attachment: fixed;
     background-position: center;
@@ -35,14 +35,20 @@ body, html {
     min-height: 100%;
 }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
+/* Second image (NEWS update) */
+.bgimg-2{
+  background-image: url("image/facility.jpg");
+  min-height: 400px;
+}
+
+/* Third image (NEWS update) */
+.bgimg-3 {
     background-image: url("image/news3.jpg");
     min-height: 400px;
 }
 
-/* Third image (Contact) */
-.bgimg-3 {
+/* Fourth image (Contact) */
+.bgimg-4 {
     background-image: url("http://unsplash.com/photos/TV2gg2kZD1o/download");
     min-height: 400px;
 }
@@ -59,7 +65,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and mobiles */
 @media only screen and (max-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4{
         background-attachment: scroll;
     }
 }
@@ -147,7 +153,7 @@ hr.dash {
 #profile { vertical-align: middle; }
 
 #nav-company-title{
-  font-size:20px;
+  font-size:17px;
 }
 
 #main-display-text{
@@ -178,6 +184,7 @@ hr.dash {
 
 .paragraph-title{
   font-family: 'Abril Fatface', serif;
+  text-align: left;
 }
 
 .paragraph-text {
@@ -208,7 +215,7 @@ hr.dash {
 
 .article-date {
   font-size: 12px;
-  color: #5c5b5b;
+  color: #808285;
   text-align: left;
   margin-top: 0px;
 }
