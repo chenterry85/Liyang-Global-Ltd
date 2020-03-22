@@ -22,13 +22,23 @@
     <!--Navbar-->
     <div class="w3-top">
       <div class="w3-bar w3-navbar w3-wide" id="myNavBar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu" id="toggleNavBar">
+          <i class="fa fa-bars"></i>
+        </a>
         <a href="#home" class="w3-bar-item w3-button w3-padding-large" id="nav-company-title" onclick="scrollToTop(500)"><b>LIYANG</b> GLOBAL</a>
         <a href="#contact" class="w3-hide-small w3-right w3-bar-item w3-button w3-bar-item w3-padding-large">Contact</a>
+        <a href="#facility" class="w3-hide-small w3-right w3-bar-item w3-button w3-bar-item w3-padding-large">Facility</a>
         <a href="https://sites.google.com/liyangbikes.com/home-english/home" class="w3-hide-small w3-right w3-bar-item w3-button w3-bar-item w3-padding-large">Products</a>
         <a href="#about" class="w3-hide-small w3-right w3-bar-item w3-button w3-bar-item w3-padding-large">About</a>
       </div>
 
-      
+      <!-- Navbar on small screens -->
+      <div id="mySmallNavBar" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">About</a>
+        <a href="https://sites.google.com/liyangbikes.com/home-english/home" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Products</a>
+        <a href="#facility" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Facility</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Contact</a>
+      </div>
     </div>
 
     <!-- First Parallax Image with Logo Text -->
@@ -40,7 +50,7 @@
       <p class="w3-center w3-wide" id="main-display-text" >LIYANG</p>
       <p class="w3-center w3-wide" id="main-display-subtext" >Global Bicycle Tailor Service</p>
         <a href = "https://sites.google.com/liyangbikes.com/home-english/home" style="text-decoration:none">
-          <p class="w3-round-large w3-center w3-padding-large w3-black w3-wide w3-animate-opacity" id="browse-btn"> >> Browse</p>
+          <p class="w3-round-large w3-center w3-padding-large w3-black w3-wide w3-animate-opacity" id="browse-btn" align="center"> >> Browse</p>
         </a>
     </div>
 
@@ -68,14 +78,14 @@
 
 
 
-    <!-- Second Parallax Image with Facility Text -->
+    <!-- Second Parallax Image FACILITY-->
     <div class="bgimg-2 w3-display-container">
       <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-light-grey w3-wide">MANUFACTURE</span>
       </div>
     </div>
 
-    <div class="w3-content w3-container w3-padding-64" id="team">
+    <div class="w3-content w3-container w3-padding-64" id="facility">
       <h2 class="paragraph-title">Facility</h2>
       <hr class="dash">
       <div class="paragraph-text">
@@ -88,7 +98,45 @@
           <li>L.Y.G Carbon fiber frame Composite Plant, China</li>
         </ul>
       </div>
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img src="image/facility/welding1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/welding2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/painting1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/painting2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+          <img src="image/facility/wheel1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/wheel2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/assembly1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/assembly2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+        </div>
+      </div>
     </div>
+
 
 
 
@@ -194,6 +242,9 @@
             </div>
           </div>
         <!-- END BLOG ENTRIES -->
+
+        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+
         </div>
       </div>
     </div>

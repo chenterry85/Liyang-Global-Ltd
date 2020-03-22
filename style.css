@@ -64,11 +64,7 @@ body, html {
 }
 
 /* Turn off parallax scrolling for tablets and mobiles */
-@media only screen and (max-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4{
-        background-attachment: scroll;
-    }
-}
+
 
 /* About Section */
 #about {
@@ -156,6 +152,10 @@ hr.dash {
   font-size:17px;
 }
 
+#toggleNavBar{
+  margin-top:5px;
+}
+
 #main-display-text{
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
@@ -178,8 +178,10 @@ hr.dash {
 #browse-btn{
   font-family: 'Quicksand', sans-serif;
   font-weight: 200;
-  padding-left: 0px;
-  padding-right: 0px;
+  width: 280px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .paragraph-title{

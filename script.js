@@ -123,6 +123,17 @@ function myFunction() {
     }
 }
 
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("mySmallNavBar");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+//navigate to article
 function navigateToArticlePage(index){
   let file = "article_files/article"+index+".html"
   window.open(file,"_self")
@@ -138,37 +149,3 @@ function scrollToTop(scrollDuration) {
         else clearInterval(scrollInterval);
     },15);
 }
-
-var cursorY;
-
-//detect Scrolling
-// window.onscroll = function (e) {
-//   var offset = window.pageYOffset
-//   var offset_from_bottom = document.documentElement.scrollHeight - window.pageYOffset
-//
-//   //console.log(offset)
-//   //console.log(offset_from_bottom)
-//
-//   if((offset>=900 && offset<=1438) || (offset>=1831 && offset_from_bottom >= 1164)){
-//     for(var i = 0; i < 4; i++){
-//       document.getElementsByClassName("w3-bar-item")[i].style.color="#444"
-//     }
-//   }else{
-//     for(var i = 0; i < 4; i++){
-//       document.getElementsByClassName("w3-bar-item")[i].style.color="#FFFFFF"
-//     }
-//   }
-//
-// }
-
-// //detect cursor location
-// window.onload = function(){
-//   if (window.Event) {
-// 	   document.captureEvents(Event.MOUSEMOVE)
-// 	}
-// 	document.onmousemove = cursorYLocation
-// }
-//
-// function setcursorY()(e){
-//   cursorY = (window.Event) ? e.pageY : event.clientY
-// }
