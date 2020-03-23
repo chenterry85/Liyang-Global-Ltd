@@ -1,19 +1,30 @@
 <html>
   <body>
     <link href='gallery-style.css' rel='stylesheet' type='text/css'>
+
     <script type="text/javascript" src="gallery-script.js"></script>
 
     <div class="header">
-      <h1>LIYANG GLOBAL</h1><span>Gallery Wall</span>
+      <h1>LIYANG GLOBAL</h1><span>Photo Gallery</span>
       <div class="social">
         <a target="_blank" href="https://twitter.com/ReisnerShawn">
-          <img class="social" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png"/>
+          <img class="social" src="../image/icons/home.png"/>
         </a>
         <a target="_blank" href="https://codepen.io/sreisner">
-          <img class="social" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png"/>
+          <img class="social" src="../image/icons/product.png">
         </a>
       </div>
     </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+      </div>
+    </div>
+
     <div id="wall"></div>
+
   </body>
 </html>

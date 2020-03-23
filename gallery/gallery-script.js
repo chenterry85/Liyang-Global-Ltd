@@ -1,7 +1,7 @@
 window.onload = function (){
 
   const NUM_ROWS = 3;
-  const NUM_IMAGES = 302;
+  const NUM_IMAGES = 100;
   const IMAGES = [];
   for (let i = 1; i <= NUM_IMAGES; i++) {
     IMAGES.push("../image/gallery/a"+i+".jpg");
@@ -23,15 +23,17 @@ window.onload = function (){
       let frame = document.createElement('div');
       frame.classList.add('frame');
       frame.innerHTML = `
-        <img src="${IMAGES[i]}">
+        <img src="${IMAGES[i]}" onclick="expandImage(this)">
         <div class="reflection">
           <img src="${IMAGES[i]}">
         </div>
       `;
       row.appendChild(frame);
     } else {
-      let img = document.createElement('img');
-      img.src = IMAGES[i];
+      let img = document.createElement('div');
+      img.innerHTML = `
+        <img src="${IMAGES[i]}" onclick="expandImage(this)">
+      `;
       row.appendChild(img);
     }
   }
@@ -63,4 +65,9 @@ window.onload = function (){
 
   window.addEventListener('wheel', scrollWall);
 
+}
+
+function expandImage(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
 }
