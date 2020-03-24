@@ -65,26 +65,26 @@ body {
   text-transform: lowercase;
 }
 
-.social {
+.nav {
   display: -webkit-box;
   display: flex;
   margin-top: 0.4em;
 }
 
-.social a {
+.nav a {
   position: relative;
   width: 1.5em;
   height: 1.5em;
   margin: 0px 0.75em;
 }
-.social a img {
+.nav a img {
   width: 100%;
   height: 100%;
   transition: all 0.2s ease-out;
 }
 
-.social a img:hover{
-  transform:scale(1.2);
+.nav a img:hover{
+  transform:scale(1.4);
 }
 
 #wall {

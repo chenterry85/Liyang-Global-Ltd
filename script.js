@@ -49,7 +49,7 @@ setTimeout(carousel, 500) // Change image every 2 seconds
 
 var slide_index = 0;
 function carousel() {
-  var x = ["url('image/Bike.jpg')","url('image/bike1.jpg')","url('image/bike7.jpg')"]
+  var x = ["url('image/Bike.jpg')","url('image/bike1.jpg')","url('image/bike7.jpg')","url('image/bike3.jpg')"]
   var slideshow = document.getElementsByClassName("mainSlideshow")[0];
   var dots = document.getElementsByClassName("dot");
 

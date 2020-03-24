@@ -4,7 +4,7 @@ window.onload = function (){
   const NUM_IMAGES = 100;
   const IMAGES = [];
   for (let i = 1; i <= NUM_IMAGES; i++) {
-    IMAGES.push("../image/gallery/a"+i+".jpg");
+    IMAGES.push("image/gallery/a"+i+".jpg");
   }
 
   let rows = [];

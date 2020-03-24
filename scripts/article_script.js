@@ -1,5 +1,3 @@
-
-
 $(function() {
    var thumbnail =  $('.thumbnail');
    var container = $('.viewer-body');
@@ -39,3 +37,30 @@ $(function() {
    });
 
 });
+
+
+
+$(document).ready(function() {
+  // convert markdown to html
+  var output = markdown.toHTML( markdown_source );
+  document.write(output);
+});
+
+
+// get markdown content
+ var body_location = 'test.md';
+
+ function getText(myUrl){
+     var result = null;
+     $.ajax( { url: myUrl,
+               type: 'get',
+               dataType: 'html',
+               async: false,
+               success: function(data) { result = data; }
+             }
+     );
+     FileReady = true;
+     return result;
+ }
+
+ var markdown_source = getText(body_location);
