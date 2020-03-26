@@ -39,28 +39,39 @@ $(function() {
 });
 
 
+// Modal Image Gallery
+function expandImage(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
-$(document).ready(function() {
-  // convert markdown to html
-  var output = markdown.toHTML( markdown_source );
-  document.write(output);
-});
 
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("NavBar")
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar " + "w3-wide" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace("w3-card w3-animate-top w3-white", "");
+    }
+}
 
-// get markdown content
- var body_location = 'test.md';
+//slideshow
+var x,slideshow;
+window.onload = function() {
+  x = ["url('../image/article-slideshow/slideshow1.jpg')","url('../image/article-slideshow/slideshow2.jpg')","url('../image/article-slideshow/slideshow3.jpg')"]
+  slideshow = document.getElementsByClassName("slideshow")[0];
 
- function getText(myUrl){
-     var result = null;
-     $.ajax( { url: myUrl,
-               type: 'get',
-               dataType: 'html',
-               async: false,
-               success: function(data) { result = data; }
-             }
-     );
-     FileReady = true;
-     return result;
- }
+  carousel()
+};
 
- var markdown_source = getText(body_location);
+var slide_index = 0;
+function carousel() {
+  slide_index++
+  if (slide_index > x.length) {slide_index = 1}
+  slideshow.style.backgroundImage = x[slide_index - 1]
+  setTimeout(carousel, 3000) // Change image every 3 seconds
+}

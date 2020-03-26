@@ -45,7 +45,7 @@ function scrollToTop(scrollDuration) {
 }
 
 //slideshow
-setTimeout(carousel, 500) // Change image every 2 seconds
+setTimeout(carousel, 500) // Change image every 3 seconds
 
 var slide_index = 0;
 function carousel() {
@@ -65,5 +65,5 @@ function carousel() {
   dots[slide_index-1].className += " dot-active";
 
 
-  setTimeout(carousel, 3000) // Change image every 2 seconds
+  setTimeout(carousel, 3000) // Change image every 3 seconds
 }

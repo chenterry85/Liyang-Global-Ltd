@@ -5,7 +5,6 @@
     <meta name="generator" content="2017.9.31.363"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link href='../styles/article_style.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -16,32 +15,45 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../scripts/article_script.js"></script>
 
+    <link href='../styles/-debug.css' rel='stylesheet' type='text/css'>
+    <link href='../styles/article_style.css' rel='stylesheet' type='text/css' onload="this.media='all'">
+    <script type="text/javascript" src="../scripts/article_script.js" onload="this.media='all'"></script>
 
   </head>
   <body>
+    <!--Navbar-->
     <div class="w3-top">
-      <ul class="w3-navbar w3-wide">
-        <li class="w3-bar-item" id="nav-company-title">
-          <a href="../index.html#home" class="w3-padding-large"><b>LIYANG</b> GLOBAL</a>
-        </li>
-        <li class="w3-hide-small w3-right w3-bar-item">
-          <a href="../index.html##contact" class="w3-padding-large">Contact</a>
-        </li>
-        <li class="w3-hide-small w3-right w3-bar-item">
-          <a href="../index.html##team" class="w3-padding-large">Team</a>
-        </li>
-        <li class="w3-hide-small w3-right w3-bar-item">
-          <a href="../index.html##about" class="w3-padding-large">About</a>
-        </li>
-      </ul>
+      <div class="w3-bar w3-wide" id="NavBar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu" id="toggleNavBar">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html#home" class="w3-bar-item w3-button w3-padding-large" id="nav-company-title" onclick="scrollToTop(500)"><b>LIYANG</b> GLOBAL</a>
+        <a href="#contact" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Contact</a>
+        <a href="gallery.html" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Gallery</a>
+        <a href="https://sites.google.com/liyangbikes.com/home-english/home" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Products</a>
+        <a href="#facility" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Facility</a>
+        <a href="#about" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">About</a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="mySmallNavBar" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">About</a>
+        <a href="#facility" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Facility</a>
+        <a href="https://sites.google.com/liyangbikes.com/home-english/home" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Products</a>
+        <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Products</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Contact</a>
+      </div>
     </div>
 
     <!-- Half Parallax Image -->
 
-    <div class="w3-display-container w3-opacity-min">
-      <img src="../image/half-image/Bike-half.jpg" height="50%">
+    <div class="wrapper">
+      <div class="bgimg-1 w3-display-container w3-opacity-min slideshow">
+        <img src="../image/article-slideshow/slideshow1.jpg" style="display:none;" alt="" />
+        <img src="../image/article-slideshow/slideshow2.jpg" style="display:none;" alt="" />
+        <img src="../image/article-slideshow/slideshow3.jpg" style="display:none;" alt="" />
+      </div>
     </div>
 
     <!-- Article section -->
@@ -57,7 +69,8 @@
         </div>
 
         <div class="w3-container">
-          <!--insert BEGIN-->
+
+          <!-- INSERT BEGIN here -->
 
           <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Liyang Global &amp; Acer Group have joined forces to develop complete eBike systems…</span></div>
           <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">
@@ -85,32 +98,32 @@
           <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Key to the complete Acer system = batteries – motors and control units / onboard computers is that every part is of the Acer system is manufactured in Taiwan &amp; with&nbsp;regulation changing all the time on exports out of Taiwan this is perfect timing to launch Acer powered eBikes – giving the true origin of Taiwanese..</span></div>
           <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Products will be exhibited at 2020 Taipei International Cycle Show in March 2020 at Liyang Global &amp; Acer Group stand to launch the eBike system showing the developments Incorporating intelligence, simplicity, affordable and great designs…</span></div>
 
-          <!--inset END-->
+
+
+          <!--INSERT END-->
         </div>
 
         <!--Images-->
 
-        <div class="media">
+        <div class="image-grid">
 
-          <a class="thumbnail">
-            <img src="../image/article/a71.jpg">
-               </a>
-           <a class="thumbnail">
-            <img src="../image/article/a72.jpg">
-           </a>
+            <img src="../image/article/a71.jpg" style="width:100%" onclick="expandImage(this)" class="w3-hover-opacity" alt="">
+
+            <img src="../image/article/a72.jpg" style="width:100%" onclick="expandImage(this)" class="w3-hover-opacity" alt="">
 
         </div>
 
-
-        <div class="thumb-viewer">
-            <a class="prev"></a>
-            <a class="next"></a>
-            <a class="close">x</a>
-          <div class="viewer-body"></div>
-         </div>
-
       <!-- END-->
 
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -132,7 +145,11 @@
           <i class="fa fa-flickr fa-2x"></i>
         </a>
       </div>
-      <p class="w3-half">Made with <span class="heart-icon">❤</span> by Terry Chen</a></p>
+      <div class="w3-half">
+        <a href="#home" onclick="scrollToTop(500)">
+          <p>@Liyang Global Ltd - Global Bike Tailor Service.</p>
+        </a>
+      </div>
     </footer>
 
 

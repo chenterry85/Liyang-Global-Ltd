@@ -5,7 +5,7 @@
     <meta name="generator" content="2017.9.31.363"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link href='article_style.css' rel='stylesheet' type='text/css'>
+    <link href='../styles/article_style.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -16,119 +16,307 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="article_script.js"></script>
-
+    <script type="text/javascript" src="../scripts/article_script.js"></script>
 
   </head>
   <body>
+
+    <!--Navbar-->
     <div class="w3-top">
-      <ul class="w3-navbar w3-wide">
-        <li class="w3-bar-item" id="nav-company-title">
-          <a href="../index.html#home" class="w3-padding-large"><b>LIYANG</b> GLOBAL</a>
-        </li>
-        <li class="w3-hide-small w3-right w3-bar-item">
-          <a href="../index.html##contact" class="w3-padding-large">Contact</a>
-        </li>
-        <li class="w3-hide-small w3-right w3-bar-item">
-          <a href="../index.html##team" class="w3-padding-large">Team</a>
-        </li>
-        <li class="w3-hide-small w3-right w3-bar-item">
-          <a href="../index.html##about" class="w3-padding-large">About</a>
-        </li>
-      </ul>
+      <div class="w3-bar w3-wide" id="NavBar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu" id="toggleNavBar">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large" id="nav-company-title" onclick="scrollToTop(500)"><b>LIYANG</b> GLOBAL</a>
+        <a href="#contact" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Contact</a>
+        <a href="gallery.html" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Gallery</a>
+        <a href="https://sites.google.com/liyangbikes.com/home-english/home" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Products</a>
+        <a href="#facility" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Facility</a>
+        <a href="#about" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">About</a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="mySmallNavBar" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">About</a>
+        <a href="#facility" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Facility</a>
+        <a href="https://sites.google.com/liyangbikes.com/home-english/home" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Products</a>
+        <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Products</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Contact</a>
+      </div>
     </div>
 
-    <!-- First Parallax Image with Logo Text -->
+    <!-- First Parallax Image MAIN DISPLAY-->
 
-    <div class="w3-display-container w3-opacity-min">
-      <img src="../image/half-image/Bike-half.jpg" height="50%">
+    <div class="bgimg-1 w3-display-container w3-opacity-min mainSlideshow">
+      <img src="image/Bike.jpg" style="display:none;" alt="" />
+      <img src="image/bike1.jpg" style="display:none;" alt="" />
+      <img src="image/bike7.jpg" style="display:none;" alt="" />
+      <img src="image/bike3.jpg" style="display:none;" alt="" />
     </div>
 
-    <!-- Article section -->
+    <div class="page-center-display">
+      <p class="w3-center w3-wide" id="main-display-text" >LIYANG</p>
+      <p class="w3-center w3-wide" id="main-display-subtext" >Global Bicycle Tailor Service</p>
+      <a href = "https://sites.google.com/liyangbikes.com/home-english/home" style="text-decoration:none">
+        <p class="w3-round-large w3-center w3-padding-large w3-black w3-wide w3-animate-opacity" id="browse-btn" align="center"> &raquo; Browse</p>
+      </a>
+
+      <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+    </div>
+
+
+
+    </div>
+
+    <!-- About section -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-      <h2 class="w3-center paragraph-title">Liyang ODM eBikes powered by Acer!!!</h2>
+      <h2 class="paragraph-title">ABOUT</h2>
       <hr class="dash">
       <div class = "paragraph-text">
-
-
-        <!--insert BEGIN-->
-
-        <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Liyang Global &amp; Acer Group have joined forces to develop complete eBike systems…</span></div>
-        <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">
-            <b style="font-weight: bold;">
-              <br>
-            </b>With the electric bike market growing globally – we have a very developed strong collection of eBikes for all categories: eGravel – eHybrid – eMTB – eRoad – eCargo and eFolding eBikes – we are trying to bring design: innovation – performance and make it affordable with quality branded parts &amp; powered by Acer – please find attached a file with a few framesets / eBikes designs to assess…
-          </span>
-          <p style="margin: 1.07143em 0px;"><span style="font-family: arial, helvetica, sans-serif;">With Acer advanced technology one of the worlds largest computer vendors – we have been working with Acer to developing eBike complete systems with motors – batteries – onboard computer provides the rider with&nbsp;many features&nbsp;– exclusive to Liyang we are ready with the rear hub motor and centre motor will be ready Q2…</span></p>
-        </div>
-        <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;">
-          <ul style="margin: 1.07143em 0px 1.07143em 1.07143em; padding: 0px; list-style: outside disc;">
-            <li style="margin: 0px; padding: 0px; display: list-item;"><span style="font-family: arial, helvetica, sans-serif;">Acer rear hub motor system to provide more affordable…</span></li>
-            <li style="margin: 0px; padding: 0px; display: list-item;"><span style="font-family: arial, helvetica, sans-serif;">Acer will launch mid / centre motor system&nbsp;Q2 2020&nbsp;…</span></li>
-            <li style="margin: 0px; padding: 0px; display: list-item;"><span style="font-family: arial, helvetica, sans-serif;">Acer Integrated down tube Batteries with different power / ranges available and speedy chargers (perfect for after markets sales up grades) – the&nbsp;down tube integrated battery mould is the same on most eBikes which allows to fit difference size battery power packs (40 – 60 or 90 mile ranges on 1 x charge)…</span></li>
-            <li style="margin: 0px; padding: 0px; display: list-item;"><span style="font-family: arial, helvetica, sans-serif;">Acer Onboard intelligent computers provides 3 x levels for the rider – basic – intelligent and pro systems with&nbsp;many features ie GSP / sat nav – battery BMS charge / range / mileage plus many more and&nbsp;benefits from having&nbsp;fault diagnostics &amp; app&nbsp;and the ability to connect to Android &amp; iPhones with blue tooth…</span></li>
-          </ul>
-        </div>
-        <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Acer are investing heavily into eBikes systems over the coming months / years to develop new technology…</span></div>
-        <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;">
-          <br>
-        </div>
-        <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Liyang can provide proprietary frame designs for retailers in all categories that can be designed exclusively…</span>
-          <p style="margin: 1.07143em 0px;"><span style="font-family: arial, helvetica, sans-serif;">Acer a global brand will add value and reassure consumers of quality products and market support – we feel with customers’ own eBike brands and the global computer brand Acer is the perfect combination “Powered by Acer” the consumers will recognises these brands reassuring them to make a purchase – giving buyers great opportunities to gain market exposure and elevate the brands…</span></p>
-        </div>
-        <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Key to the complete Acer system = batteries – motors and control units / onboard computers is that every part is of the Acer system is manufactured in Taiwan &amp; with&nbsp;regulation changing all the time on exports out of Taiwan this is perfect timing to launch Acer powered eBikes – giving the true origin of Taiwanese..</span></div>
-        <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Products will be exhibited at 2020 Taipei International Cycle Show in March 2020 at Liyang Global &amp; Acer Group stand to launch the eBike system showing the developments Incorporating intelligence, simplicity, affordable and great designs…</span></div>
-
-        <!--inset END-->
-
-        </div>
-
-        <!--Images-->
-
-        <div class="media">
-
-          <a class="thumbnail">
-            <img src="image/a71.jpg">
-               </a>
-           <a class="thumbnail">
-            <img src="image/a72.jpg">
-           </a>
-
-        </div>
-
-
-        <div class="thumb-viewer">
-            <a class="prev"></a>
-            <a class="next"></a>
-            <a class="close">x</a>
-          <div class="viewer-body"></div>
-         </div>
-
-      <!-- END-->
-
+        <p>
+          本公司最早由來於1969年在台灣台北市由創始者許明耀先生創立”立洋貿易有限公司”. 先是從是貿易公司做進出口買賣.於1971年正式成立”立洋工業有限公司”正式生產自行車. 1979年, 台北工廠辦遷至台北縣中和市連城路並升格成”立洋工業股份有限公司”.
+        </p>
+        <p>
+          我們陸續又在中國大陸深圳，上海、美國洛杉磯、英國、越南、柬埔賽、捷克等處設過分公司，我們對於自行車經驗累積傳承多年，現在生產基地除了中國深圳、杭州、天津，還有台灣的新北市。
+        </p>
+        <p>
+          本公司一直以來專以生產自行車OEM代工為主. 在1982年至1999年這一段時間曾經自創品牌在歐洲地區及美國地區推廣”Liyang”及”Scorpio”品牌. 2004年又創另一高級品牌”Backbone”, 當年又朝向ODM代工設計方向來進行. 2005年開始針對汽車零件, 防撞桿及其他配件進行研發與推廣.2006開始台灣內銷市場, 代理德國品牌Backbone, 英國品牌Ventura, Krave及Vibe, 加拿大品牌Infinity增加台灣市場佔有率. 外銷市場持續成長, 分別打入多個知名外國通路商。
+        </p>
+        <p>
+          期待所有愛護本公司的消費者，都會喜愛我們的產品，謝謝各位的鼓勵與指教。
+        </p>
+      </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
-      <div class="w3-half">
-        <a target="_blank" href="https://twitter.com/Liyangbikes">
-          <i class="fa fa-twitter fa-2x"></i>
-        </a>
-        <a target="_blank" href="https://www.youtube.com/channel/UCk_vSPXhlcBHEP2ZyUXPvXg/videos?view_as=subscriber">
-          <i class="fa fa-youtube fa-2x"></i>
-        </a>
-        <a target="_blank" href="https://www.facebook.com/liyangbikes/">
-          <i class="fa fa-facebook fa-2x"></i>
-        </a>
-        <a target="_blank" href="https://www.instagram.com/liyangbikes/?igshid=1rzt60iibvwhd">
-          <i class="fa fa-instagram fa-2x"></i>
-        </a>
-        <a target="_blank" href="https://www.flickr.com/photos/liyangbikes">
-          <i class="fa fa-flickr fa-2x"></i>
-        </a>
+
+
+
+
+    <!-- Second Parallax Image FACILITY-->
+    <div class="bgimg-2 w3-display-container">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">MANUFACTURE</span>
       </div>
-      <p class="w3-half">Made with <span class="heart-icon">❤</span> by Terry Chen</a></p>
-    </footer>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="facility">
+      <h2 class="paragraph-title">Facility</h2>
+      <hr class="dash">
+      <div class="paragraph-text">
+        <p>We have multi locations for manufacturing:</p>
+        <ul>
+          <li>New Taipei City High End Assembly Plant, Taiwan</li>
+          <li>Shenzhen Frame Precision Machining Plant, China</li>
+          <li>Hangzhou Kids/Juvenile Bikes Production Plant, China</li>
+          <li>Tianjin Frame Precision Machining Plant, China</li>
+          <li>L.Y.G Carbon fiber frame Composite Plant, China</li>
+        </ul>
+      </div>
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img src="image/facility/welding1.png" style="width:100%" onclick="expandImage(this)" class="w3-hover-opacity" alt="Frame Welding Facility">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/welding2.png" style="width:100%" onclick="expandImage(this)" class="w3-hover-opacity" alt="Frame Welding Facility">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/painting1.png" style="width:100%" onclick="expandImage(this)" class="w3-hover-opacity" alt="Painting Facility">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/painting2.png" style="width:100%" onclick="expandImage(this)" class="w3-hover-opacity" alt="Painting Facility">
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+          <img src="image/facility/wheel1.png" style="width:100%" onclick="expandImage(this)" class="w3-hover-opacity" alt="Wheel Production">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/wheel2.png" style="width:100%" onclick="expandImage(this)" class="w3-hover-opacity" alt="Wheel Production">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/assembly1.png" style="width:100%" onclick="expandImage(this)" class="w3-hover-opacity" alt="Assembly Facility">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="image/facility/assembly2.png" style="width:100%" onclick="expandImage(this)" class="w3-hover-opacity" alt="Assembly Facility">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">NEWS UPDATE</span>
+      </div>
+    </div>
+
+    <!-- NEWS UPDATE section -->
+    <div class="w3-content w3-container w3-row">
+      <div class="w3-row">
+        <!-- Blog entries -->
+        <div class="w3-col l12 s12 w3-center ">
+
+          <!-- Blog entry 7-->
+          <div class="w3-card-4 w3-margin w3-white article">
+            <img src="image/article/a7.jpg" class="article-image">
+            <div class="w3-container w3-left">
+              <p class="article-title">Liyang ODM eBikes powered by Acer!!!</p>
+              <p class="article-date">April 7, 2014</p>
+            </div>
+
+            <div class="w3-container">
+
+              <!-- BEGIN preview content-->
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Liyang Global &amp; Acer Group have joined forces to develop complete eBike systems…</span></div>
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">
+                <b style="font-weight: bold;">
+                  <br>
+                </b>With the electric bike market growing globally – we have a very developed strong collection of eBikes for all categories: eGravel – eHybrid – eMTB – eRoad – eCargo and eFolding eBikes – we are trying to bring design: innovation – performance and make it affordable with quality branded parts &amp; powered by Acer – please find attached a file with a few framesets / eBikes designs to assess…
+              </span>
+              <p style="margin: 1.07143em 0px;"><span style="font-family: arial, helvetica, sans-serif;">With Acer advanced technology one of the worlds largest computer vendors – we have been working with Acer to developing eBike complete systems with motors – batteries – onboard computer provides the rider with&nbsp;many features&nbsp;– exclusive to Liyang we are ready with the rear hub motor and centre motor will be ready Q2…</span></p>
+            </div>
+            <!-- END preview content-->
+
+              <div class="w3-row">
+                <div class="w3-col m12 s12" style="padding-top: 20px; padding-bottom: 20px">
+                  <button class="w3-button w3-round-large w3-padding w3-white w3-border w3-left" onclick="navigateToArticlePage('7')">
+                    READ MORE »
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- Blog entry 6-->
+          <div class="w3-card-4 w3-margin w3-white article">
+            <div class="w3-container w3-left">
+              <p class="article-title">電動助力車出口量大增</p>
+              <p class="article-date">April 7, 2014</p>
+            </div>
+
+            <div class="w3-container">
+
+              <!-- BEGIN preview content-->
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Liyang Global &amp; Acer Group have joined forces to develop complete eBike systems…</span></div>
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(252, 252, 252); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">
+                <b style="font-weight: bold;">
+                  <br>
+                </b>With the electric bike market growing globally – we have a very developed strong collection of eBikes for all categories: eGravel – eHybrid – eMTB – eRoad – eCargo and eFolding eBikes – we are trying to bring design: innovation – performance and make it affordable with quality branded parts &amp; powered by Acer – please find attached a file with a few framesets / eBikes designs to assess…
+              </span>
+              <p style="margin: 1.07143em 0px;"><span style="font-family: arial, helvetica, sans-serif;">With Acer advanced technology one of the worlds largest computer vendors – we have been working with Acer to developing eBike complete systems with motors – batteries – onboard computer provides the rider with&nbsp;many features&nbsp;– exclusive to Liyang we are ready with the rear hub motor and centre motor will be ready Q2…</span></p>
+            </div>
+            <!-- END preview content-->
+
+              <div class="w3-row">
+                <div class="w3-col m12 s12" style="padding-top: 20px; padding-bottom: 20px">
+                  <button class="w3-button w3-round-large w3-padding w3-white w3-border w3-left" onclick="navigateToArticlePage('7')">
+                    READ MORE »
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- Blog entry 5-->
+          <div class="w3-card-4 w3-margin w3-white">
+          <img src="" style="width:100%">
+            <div class="w3-container">
+              <h3><b>BLOG ENTRY</b></h3>
+              <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+            </div>
+
+            <div class="w3-container">
+              <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+                tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+                </div>
+                <div class="w3-col m4 w3-hide-small">
+                  <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- END BLOG ENTRIES -->
+
+        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+
+    <!-- Second Parallax Image (Contact) -->
+
+    <div class="bgimg-4 w3-display-container" id="contact">
+      <div class="w3-display-middle">
+        <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-content w3-container w3-padding-64">
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img src="image/office.jpg" class="w3-image w3-round" style="width:100%; margin-top:25px;">
+        </div>
+        <div class="w3-col m8 w3-panel contact-info-text">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-margin-right"></i> Phone: +886-2-2709-1988<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-margin-right"></i> Email: inform@liyangbikes.com<br>
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-margin-right"></i> 15F-2, No.99, Sec. 1, Xintai 5th Rd., Xizhi Dist., New Taipei City 221, Taiwan<br>
+          </div>
+          <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-right w3-section" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
 
 
   </body>
