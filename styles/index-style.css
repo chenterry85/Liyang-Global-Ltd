@@ -284,35 +284,6 @@ hr.dash {
   line-height: 1.7;
 }
 
-.article{
-  padding-top: 20px;
-
-}
-
-.article-image{
-  margin-bottom: 20px;
-  width: 100%
-}
-
-.article-title{
-  font-family: 'Archivo', sans-serif;
-  font-weight: 500;
-  font-size: 25px;
-  margin-bottom: 0px;
-
-}
-
-.article-date {
-  font-size: 12px;
-  color: #808285;
-  text-align: left;
-  margin-top: 0px;
-}
-
-.contact-info-text{
-  font-size: 12px;
-}
-
 .image-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -354,4 +325,37 @@ hr.dash {
 .image-grid-7{
   grid-column: 3;
   grid-row: 2 / 4;
+}
+
+.article{
+  padding-top: 0px;
+}
+
+.article-image{
+  margin-bottom: 20px;
+  width: 100%
+}
+
+.article-title{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.article-date {
+  font-size: 12px;
+  color: #808285;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.contact-info-text{
+  font-size: 12px;
+}
+
+.load-more-button{
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
