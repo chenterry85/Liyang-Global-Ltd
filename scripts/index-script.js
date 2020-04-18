@@ -67,3 +67,40 @@ function carousel() {
 
   setTimeout(carousel, 3000) // Change image every 3 seconds
 }
+
+//form
+
+$('#contact-form').submit(function(e){
+  var name = document.getElementById('inputName'),
+      email = document.getElementById('inputEmail'),
+      message = document.getElementById('inputMessage');
+
+  if(!name.value||!email.value||!message.value){
+    alert("Please check your entries.")
+  }else{
+    $.ajax({
+      method: "POST",
+      url: "https://formspree.io/20terryc@students.tas.tw",
+      data: $('#contact-form').serialize(),
+      dataType: "json"
+    });
+    e.preventDefault()
+    $(this).get(0).reset()
+    alert("Message sent.")
+  }
+})
+
+
+//load MORE
+var show = false;
+function loadMore(){
+  show = !show;
+  if(show){
+    document.getElementById("more").style.display ="inline";
+    document.getElementById("read").innerHTML ="LOAD LESS";
+  }else {
+    document.getElementById("more").style.display = "none";
+    document.getElementById("read").innerHTML ="LOAD MORE";
+
+  }
+}
