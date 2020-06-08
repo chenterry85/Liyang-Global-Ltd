@@ -9,6 +9,7 @@ body, html {
     line-height: 1.8;
     font-family: 'Open sans', sans-serif;
     font-weight: 300;
+    scroll-behavior: smooth;
 }
 
 /*Navbar Styles*/
