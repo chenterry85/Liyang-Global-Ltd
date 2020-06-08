@@ -44,19 +44,20 @@ function scrollToTop(scrollDuration) {
     },15);
 }
 
-//slideshow
+//Slideshow
 setTimeout(carousel, 500) // Change image every 3 seconds
 
+var img_src = ["url('image/Low-Res/bike1.jpg')","url('image/Low-Res/bike2.jpg')","url('image/Low-Res/bike3.jpg')","url('image/Low-Res/bike4.jpg')"]
 var slide_index = 0;
+
 function carousel() {
-  var x = ["url('image/Bike.jpg')","url('image/bike1.jpg')","url('image/bike7.jpg')","url('image/bike3.jpg')"]
   var slideshow = document.getElementsByClassName("mainSlideshow")[0];
   var dots = document.getElementsByClassName("dot");
 
   //slideshow
   slide_index++
-  if (slide_index > x.length) {slide_index = 1}
-  slideshow.style.backgroundImage = x[slide_index - 1]
+  if (slide_index > img_src.length) {slide_index = 1}
+  slideshow.style.backgroundImage = img_src[slide_index - 1]
 
   //dot
   for (i = 0; i < dots.length; i++) {
@@ -67,28 +68,6 @@ function carousel() {
 
   setTimeout(carousel, 3000) // Change image every 3 seconds
 }
-
-//form
-
-$('#contact-form').submit(function(e){
-  var name = document.getElementById('inputName'),
-      email = document.getElementById('inputEmail'),
-      message = document.getElementById('inputMessage');
-
-  if(!name.value||!email.value||!message.value){
-    alert("Please check your entries.")
-  }else{
-    $.ajax({
-      method: "POST",
-      url: "https://formspree.io/20terryc@students.tas.tw",
-      data: $('#contact-form').serialize(),
-      dataType: "json"
-    });
-    e.preventDefault()
-    $(this).get(0).reset()
-    alert("Message sent.")
-  }
-})
 
 
 //load MORE
@@ -101,6 +80,21 @@ function loadMore(){
   }else {
     document.getElementById("more").style.display = "none";
     document.getElementById("read").innerHTML ="LOAD MORE";
-
   }
+}
+
+
+//Replace low resolution image to high resolution
+function upgradeSlideshowResolution(object){
+  let temp_index = object.src.indexOf("bike")
+  let img_num = parseInt(object.src.substring(temp_index + "bike".length , ++temp_index + "bike".length));
+  img_src[img_num - 1] = "url('image/bike" + img_num.toString() + ".jpg')";
+  console.log(img_src)
+}
+
+function upgradeResolution(object){
+  let id = object.id;
+  let target = "bgimg-" + id.substring(12)
+  console.log(target)
+  document.getElementsByClassName(target)[0].style.backgroundImage = "url('" + object.src + "')";
 }

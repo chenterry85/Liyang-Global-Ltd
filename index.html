@@ -12,7 +12,6 @@
     <link rel="apple-touch-icon" sizes="152x152" href="image/head-icon.png">
 
     <link href='styles/index-style.css' rel='stylesheet' type='text/css'>
-    <link href='styles/-debug.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -55,10 +54,10 @@
     <!-- First Parallax Image MAIN DISPLAY-->
 
     <div class="bgimg-1 w3-display-container w3-opacity-min mainSlideshow">
-      <img src="image/Bike.jpg" style="display:none;" alt="" />
-      <img src="image/bike1.jpg" style="display:none;" alt="" />
-      <img src="image/bike7.jpg" style="display:none;" alt="" />
-      <img src="image/bike3.jpg" style="display:none;" alt="" />
+      <img src="image/bike1.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
+      <img src="image/bike2.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
+      <img src="image/bike3.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
+      <img src="image/bike4.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
     </div>
 
     <div class="page-center-display">
@@ -107,6 +106,7 @@
 
     <!-- Second Parallax Image FACILITY-->
     <div class="bgimg-2 w3-display-container">
+      <img id="placeholder_2" src="image/facility.jpg" style="display:none;" onload="upgradeResolution(this);">
       <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-light-grey w3-wide">MANUFACTURE</span>
       </div>
@@ -127,21 +127,22 @@
       </div>
 
       <div class="image-grid">
-        <img src="image/facility/1.jpg" class="image-grid-1 w3-hover-opacity" alt="Assembly Facility" width="100%" onclick="expandImage(this)">
-        <img src="image/facility/2.jpg" class="image-grid-2 w3-hover-opacity" alt="Frame Welding Facility" width="100%" onclick="expandImage(this)">
-        <img src="image/facility/4.jpg" class="image-grid-3 w3-hover-opacity" alt="Painting Facility" width="100%" onclick="expandImage(this)">
-        <img src="image/facility/5.jpg" class="image-grid-4 w3-hover-opacity" alt="Frame Welding Facility" width="100%" onclick="expandImage(this)">
-        <img src="image/facility/3.jpg" class="image-grid-5 w3-hover-opacity" alt="Assembly Facility" width="100%" onclick="expandImage(this)">
-        <img src="image/facility/7.jpg" class="image-grid-6 w3-hover-opacity" alt="Wheel Production" width="100%" onclick="expandImage(this)">
-        <img src="image/facility/6.jpg" class="image-grid-7 w3-hover-opacity" alt="Wheel Production" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/1.jpg" class="facility-image image-grid-1 w3-hover-opacity" alt="Assembly Facility" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/2.jpg" class="facility-image image-grid-2 w3-hover-opacity" alt="Frame Welding Facility" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/4.jpg" class="facility-image image-grid-3 w3-hover-opacity" alt="Painting Facility" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/5.jpg" class="facility-image image-grid-4 w3-hover-opacity" alt="Frame Welding Facility" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/3.jpg" class="facility-image image-grid-5 w3-hover-opacity" alt="Assembly Facility" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/7.jpg" class="facility-image image-grid-6 w3-hover-opacity" alt="Wheel Production" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/6.jpg" class="facility-image image-grid-7 w3-hover-opacity" alt="Wheel Production" width="100%" onclick="expandImage(this)">
       </div>
 
     </div>
 
 
 
-    <!-- Second Parallax Image with Portfolio Text -->
+    <!-- Second Parallax Image -->
     <div class="bgimg-3 w3-display-container">
+      <img id="placeholder_3" src="image/news3.jpg" class="hidden" onload="upgradeResolution(this);">
       <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-light-grey w3-wide">NEWS UPDATE</span>
       </div>
@@ -298,9 +299,10 @@
     </div>
 
 
-    <!-- Second Parallax Image (Contact) -->
+    <!-- Fourth Parallax Image (Contact) -->
 
     <div class="bgimg-4 w3-display-container" id="contact">
+      <img id="placeholder_4" src="image/contact3.jpg" class="hidden" onload="upgradeResolution(this);">
       <div class="w3-display-middle">
         <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
       </div>

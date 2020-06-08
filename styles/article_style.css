@@ -221,3 +221,9 @@ hr.dash {
   grid-gap: 15px;
   padding: 10px;
 }
+
+@media screen and (max-width:450px){
+  .image-grid{
+    display:inline;
+  }
+}

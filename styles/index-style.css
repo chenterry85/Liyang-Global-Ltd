@@ -31,25 +31,25 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('../image/bike.jpg');
+    background-image: url('../image/Low-Res/bike1.jpg');
     min-height: 100%;
 }
 
 /* Second image (NEWS update) */
 .bgimg-2{
-  background-image: url("../image/facility.jpg");
+  background-image: url("../image/Low-Res/facility.jpg");
   min-height: 400px;
 }
 
 /* Third image (NEWS update) */
 .bgimg-3 {
-    background-image: url("../image/news3.jpg");
+    background-image: url("../image/Low-Res/news3.jpg");
     min-height: 400px;
 }
 
 /* Fourth image (Contact) */
 .bgimg-4 {
-    background-image: url("../image/contact3.jpg");
+    background-image: url("../image/Low-Res/contact3.jpg");
     min-height: 400px;
 }
 
@@ -244,6 +244,18 @@ hr.dash {
   margin-right: auto;
 }
 
+@media screen and (max-width:450px){
+  #main-display-text{
+    font-size: 60px;
+  }
+  #main-display-subtext{
+    font-size:10px;
+  }
+  #browse-btn{
+    width:200px;
+  }
+}
+
 .page-center-display{
   position: absolute;
   top: 60%;
@@ -327,6 +339,15 @@ hr.dash {
   grid-row: 2 / 4;
 }
 
+@media screen and (max-width:450px){
+  .image-grid{
+    display:block;
+  }
+  .facility-image{
+    padding: 10px;
+  }
+}
+
 .article{
   padding-top: 0px;
 }
@@ -355,7 +376,15 @@ hr.dash {
   font-size: 12px;
 }
 
+.w3-half{
+  margin-top: 10px;
+}
+
 .load-more-button{
   margin-top: 20px;
   margin-bottom: 60px;
+}
+
+.hidden{
+  display: none;
 }
