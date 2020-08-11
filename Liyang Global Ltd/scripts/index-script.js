@@ -86,14 +86,13 @@ function loadMore(){
 //Replace low resolution image to high resolution
 function upgradeSlideshowResolution(index){
   let num_index = parseInt(index) - 1
-  console.log(index)
-  img_src[num_index] = "url('image/bike" + index + ".jpg')";
+  img_src[num_index] = `url('image/bike${index}.jpg')`
   console.log(img_src)
 }
 
 function upgradeResolution(object){
-  let id = object.id;
-  let target = "bgimg-" + id.substring(12)
+  let id = object.id
+  let target = "bgimg-" + id.substring(21)
   console.log(target)
-  document.getElementsByClassName(target)[0].style.backgroundImage = "url('" + object.src + "')";
+  document.getElementsByClassName(target)[0].style.backgroundImage = `url('${object.src}')`
 }
