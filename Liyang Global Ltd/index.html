@@ -1,0 +1,374 @@
+<html>
+  <head>
+    <title>Liyang Global Ltd.</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="generator" content="2017.9.31.363"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="shortcut icon" type="image/png" href="image/head-icon.png"/>
+    <link rel="apple-touch-icon" href="image/head-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="image/head-icon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="image/head-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="image/head-icon.png">
+
+    <link href='styles/index-style.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="scripts/index-script.js"></script>
+
+  </head>
+  <body>
+
+    <!--Navbar-->
+    <div class="w3-top">
+      <div class="w3-bar w3-wide" id="NavBar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu" id="toggleNavBar">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large" id="nav-company-title" onclick="scrollToTop(500)"><b>LIYANG</b> GLOBAL</a>
+        <a href="#contact" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Contact</a>
+        <a href="gallery.html" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Gallery</a>
+        <a href="https://sites.google.com/liyangbikes.com/home-english/home" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Products</a>
+        <a href="#facility" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">Facility</a>
+        <a href="#about" class="w3-hide-small w3-right w3-bar-item w3-button w3-padding-large">About</a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="mySmallNavBar" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">About</a>
+        <a href="#facility" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Facility</a>
+        <a href="https://sites.google.com/liyangbikes.com/home-english/home" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Products</a>
+        <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Gallery</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="toggleFunction()">Contact</a>
+      </div>
+    </div>
+
+    <!-- First Parallax Image MAIN DISPLAY-->
+
+    <div class="bgimg-1 w3-display-container w3-opacity-min mainSlideshow">
+      <div id="low_resoultion_carousel_placeholder1"></div>
+      <img src="image/bike1.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
+      <div id="low_resoultion_carousel_placeholder2"></div>
+      <img src="image/bike2.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
+      <div id="low_resoultion_carousel_placeholder3"></div>
+      <img src="image/bike3.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
+      <div id="low_resoultion_carousel_placeholder4"></div>
+      <img src="image/bike4.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
+    </div>
+
+    <div class="page-center-display">
+      <p class="w3-center w3-wide" id="main-display-text" >LIYANG</p>
+      <p class="w3-center w3-wide" id="main-display-subtext" >Global Bicycle Tailor Service</p>
+      <a href = "https://sites.google.com/liyangbikes.com/home-english/home" style="text-decoration:none">
+        <p class="w3-round-large w3-center w3-padding-large w3-black w3-wide w3-animate-opacity" id="browse-btn" align="center"> &raquo; Browse</p>
+      </a>
+
+      <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+    </div>
+
+
+
+    </div>
+
+    <!-- About section -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h2 class="paragraph-title">ABOUT</h2>
+      <hr class="dash">
+      <div class = "paragraph-text">
+        <p>
+          本公司最早由來於1969年在台灣台北市由創始者許明耀先生創立”立洋貿易有限公司”. 先是從是貿易公司做進出口買賣.於1971年正式成立”立洋工業有限公司”正式生產自行車. 1979年, 台北工廠辦遷至台北縣中和市連城路並升格成”立洋工業股份有限公司”.
+        </p>
+        <p>
+          我們陸續又在中國大陸深圳，上海、美國洛杉磯、英國、越南、柬埔賽、捷克等處設過分公司，我們對於自行車經驗累積傳承多年，現在生產基地除了中國深圳、杭州、天津，還有台灣的新北市。
+        </p>
+        <p>
+          本公司一直以來專以生產自行車OEM代工為主. 在1982年至1999年這一段時間曾經自創品牌在歐洲地區及美國地區推廣”Liyang”及”Scorpio”品牌. 2004年又創另一高級品牌”Backbone”, 當年又朝向ODM代工設計方向來進行. 2005年開始針對汽車零件, 防撞桿及其他配件進行研發與推廣.2006開始台灣內銷市場, 代理德國品牌Backbone, 英國品牌Ventura, Krave及Vibe, 加拿大品牌Infinity增加台灣市場佔有率. 外銷市場持續成長, 分別打入多個知名外國通路商。
+        </p>
+        <p>
+          期待所有愛護本公司的消費者，都會喜愛我們的產品，謝謝各位的鼓勵與指教。
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Second Parallax Image FACILITY-->
+    <div class="bgimg-2 w3-display-container">
+      <img id="placeholder_2" src="image/facility.jpg" style="display:none;" onload="upgradeResolution(this);">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">MANUFACTURE</span>
+      </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="facility">
+      <h2 class="paragraph-title">Facility</h2>
+      <hr class="dash">
+      <div class="paragraph-text">
+        <p>We have multi locations for manufacturing:</p>
+        <ul>
+          <li>New Taipei City High End Assembly Plant, Taiwan</li>
+          <li>Shenzhen Frame Precision Machining Plant, China</li>
+          <li>Hangzhou Kids/Juvenile Bikes Production Plant, China</li>
+          <li>Tianjin Frame Precision Machining Plant, China</li>
+          <li>L.Y.G Carbon fiber frame Composite Plant, China</li>
+        </ul>
+      </div>
+
+      <div class="image-grid">
+        <img src="image/facility/1.jpg" class="facility-image image-grid-1 w3-hover-opacity" alt="Assembly Facility" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/2.jpg" class="facility-image image-grid-2 w3-hover-opacity" alt="Frame Welding Facility" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/4.jpg" class="facility-image image-grid-3 w3-hover-opacity" alt="Painting Facility" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/5.jpg" class="facility-image image-grid-4 w3-hover-opacity" alt="Frame Welding Facility" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/3.jpg" class="facility-image image-grid-5 w3-hover-opacity" alt="Assembly Facility" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/7.jpg" class="facility-image image-grid-6 w3-hover-opacity" alt="Wheel Production" width="100%" onclick="expandImage(this)">
+        <img src="image/facility/6.jpg" class="facility-image image-grid-7 w3-hover-opacity" alt="Wheel Production" width="100%" onclick="expandImage(this)">
+      </div>
+
+    </div>
+
+
+
+    <!-- Second Parallax Image -->
+    <div class="bgimg-3 w3-display-container">
+      <img id="placeholder_3" src="image/news3.jpg" class="hidden" onload="upgradeResolution(this);">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">NEWS UPDATE</span>
+      </div>
+    </div>
+
+    <!-- NEWS UPDATE section -->
+    <div class="w3-content w3-container w3-row">
+      <div class="w3-row">
+        <!-- Blog entries -->
+        <div class="w3-col l12 s12 w3-center ">
+
+          <!-- Blog entry 7-->
+          <div class="w3-card-4 w3-margin w3-white article">
+            <img src="image/article/a7.jpg" class="article-image">
+            <div class="w3-container w3-left">
+              <p class="article-title">Liyang ODM eBikes powered by Acer!!!</p>
+              <p class="article-date"><b>ON: </b>Junuary 20, 2020</p>
+            </div>
+
+            <div class="w3-container">
+
+              <!-- BEGIN preview content-->
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">Liyang Global &amp; Acer Group have joined forces to develop complete eBike systems…</span></div>
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;"><span style="font-family: arial, helvetica, sans-serif;">
+                <b style="font-weight: bold;">
+                  <br>
+                </b>With the electric bike market growing globally – we have a very developed strong collection of eBikes for all categories: eGravel – eHybrid – eMTB – eRoad – eCargo and eFolding eBikes – we are trying to bring design: innovation – performance and make it affordable with quality branded parts &amp; powered by Acer – please find attached a file with a few framesets / eBikes designs to assess…
+              </span>
+              <p style="margin: 1.07143em 0px;"><span style="font-family: arial, helvetica, sans-serif;">With Acer advanced technology one of the worlds largest computer vendors – we have been working with Acer to developing eBike complete systems with motors – batteries – onboard computer provides the rider with&nbsp;many features&nbsp;– exclusive to Liyang we are ready with the rear hub motor and centre motor will be ready Q2…</span></p>
+            </div>
+            <!-- END preview content-->
+
+              <div class="w3-row">
+                <div class="w3-col m12 s12" style="padding-top: 20px; padding-bottom: 20px">
+                  <button class="w3-button w3-round-large w3-padding w3-white w3-border w3-left" onclick="navigateToArticlePage('7')">
+                    READ MORE »
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- Blog entry 6-->
+          <div class="w3-card-4 w3-margin w3-white article">
+            <div class="w3-container w3-left">
+              <p class="article-title">電動助力車出口量大增</p>
+              <p class="article-date"><b>ON: </b>April 22, 2019</p>
+            </div>
+
+            <div class="w3-container">
+
+              <!-- BEGIN preview content-->
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+              <meta charset="utf-8"><span style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">由於歐美重視環保，加上現在電動助力單車技術成熟，所以許多外國買家大量跟國內採購。本公司也在台北自行車展接到許多訂單，日前已經紛紛量產出貨。現在外銷訂單大增，解除了國內銷售不佳的陰霾。畢竟，台灣內銷的經濟規模太小，自行車國外市場也開始陸續恢復暢銷旺度，一切又可以恢復到過去台灣自行車出口的榮景了!</span></div>
+              <!-- END preview content-->
+
+              <div class="w3-row">
+                <div class="w3-col m12 s12" style="padding-top: 20px; padding-bottom: 20px">
+                  <button class="w3-button w3-round-large w3-padding w3-white w3-border w3-left" onclick="navigateToArticlePage('6')">
+                    READ MORE »
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+
+          <!-- Blog entry 5-->
+          <div class="w3-card-4 w3-margin w3-white article">
+            <!--preview image-->
+            <img src="image/article/a5.jpg" class="article-image">
+
+            <div class="w3-container w3-left">
+              <p class="article-title">台北展示中心結束營業</p>
+              <p class="article-date"><b>ON: </b>December 20, 2018</p>
+            </div>
+
+            <div class="w3-container">
+
+              <!-- BEGIN preview content-->
+              <div dir="ltr" style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+              <meta charset="utf-8">
+              <meta charset="utf-8"><span style="color: rgb(68, 68, 68); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">由於台灣內銷狀況不佳，騎車人口急速下滑。本公司宣布將於2019年1月8日關閉位於台北市大安區的展示中心，不再對外展示。不過，台灣國內消費者仍舊可以在我們相關的線上購物網買到我們公司的產品。未來，相關售後服務，我們仍舊有兩大據點提供給大家: 新北市汐止區: 新北市汐止區新台五路1段99號15樓之2 新北市新莊區: 新北市新莊區三和路20之2號 感謝這五年來大家給予的支持與鼓勵，也希望我們有一天能夠在重新啟動展示中心為台灣國內的消費者服務。希望大家騎車愉快! 謝謝。</span>
+              </div>
+              <!-- END preview content-->
+
+              <div class="w3-row">
+                <div class="w3-col m12 s12" style="padding-top: 20px; padding-bottom: 20px">
+                  <button class="w3-button w3-round-large w3-padding w3-white w3-border w3-left" onclick="navigateToArticlePage('5')">
+                    READ MORE »
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+        <!-- END BLOG ENTRIES -->
+
+
+        <!--MORE CONTENT-->
+
+        <div id="more" style="display: none">
+
+          <!-- Blog entry 4-->
+          <div class="w3-card-4 w3-margin w3-white article">
+            <!--preview image-->
+            <img src="image/article/a4.jpg" class="article-image">
+
+            <div class="w3-container w3-left">
+              <p class="article-title">Moving to New Location!</p>
+              <p class="article-date"><b>ON: </b>December 6, 2018</p>
+            </div>
+
+            <div class="w3-container">
+
+              <!-- BEGIN preview content-->
+
+              <h2 style='line-height: 1.33333em; font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; color: rgb(0, 0, 0); margin: 0px 0px 15px; text-rendering: optimizelegibility; overflow-wrap: break-word; font-size: 1.85714em; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;'>
+              <meta charset="utf-8"><span style='color: rgb(68, 68, 68); font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'>Starting from Jan 8, 2019&hellip; &nbsp;We are moving to our new facility in the following address: 15F.-2, No.99, Sec. 1, Xintai 5th Rd., Xizhi Dist., New Taipei City 221, Taiwan This is a brand new facility and feature a special high end bicycle production line together with office facility. This will be Liyang Global historical moment of starting the new age. &ndash; END &ndash;</span></h2>
+
+              <!-- END preview content-->
+
+              <div class="w3-row">
+                <div class="w3-col m12 s12" style="padding-top: 20px; padding-bottom: 20px">
+                  <button class="w3-button w3-round-large w3-padding w3-white w3-border w3-left" onclick="navigateToArticlePage('4')">
+                    READ MORE »
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+        </div>
+        <!--end of MORE CONTENT-->
+
+        <button class="w3-button w3-padding-large w3-light-grey load-more-button" id="read" onclick="loadMore()">LOAD MORE</button>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+
+    <!-- Fourth Parallax Image (Contact) -->
+
+    <div class="bgimg-4 w3-display-container" id="contact">
+      <img id="placeholder_4" src="image/contact3.jpg" class="hidden" onload="upgradeResolution(this);">
+      <div class="w3-display-middle">
+        <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-content w3-container w3-padding-64">
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img src="image/office.jpg" class="w3-image w3-round" style="width:100%; margin-top:25px;">
+        </div>
+        <div class="w3-col m8 w3-panel contact-info-text">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-margin-right"></i> Phone: +886-2-2709-1988<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-margin-right"></i> Email: inform@liyangbikes.com<br>
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-margin-right"></i> 15F-2, No.99, Sec. 1, Xintai 5th Rd., Xizhi Dist., New Taipei City 221, Taiwan<br>
+          </div>
+          <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+          <form class="contact-form" action="contactform.php" method="post">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" name="name" id="inputName">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" name="email" id="inputEmail">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" name="message" id="inputMessage">
+            <button class="w3-button w3-black w3-right w3-section" type="submit" name="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
+      <div class="w3-half">
+        <a target="_blank" href="https://twitter.com/Liyangbikes">
+          <i class="fa fa-twitter fa-2x"></i>
+        </a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCk_vSPXhlcBHEP2ZyUXPvXg/videos?view_as=subscriber">
+          <i class="fa fa-youtube fa-2x"></i>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/liyangbikes/">
+          <i class="fa fa-facebook fa-2x"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/liyangbikes/?igshid=1rzt60iibvwhd">
+          <i class="fa fa-instagram fa-2x"></i>
+        </a>
+        <a target="_blank" href="https://www.flickr.com/photos/liyangbikes">
+          <i class="fa fa-flickr fa-2x"></i>
+        </a>
+      </div>
+      <div class="w3-half">
+        <a href="#home" onclick="scrollToTop(500)">
+          <p>@Liyang Global Ltd - Global Bike Tailor Service.</p>
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
