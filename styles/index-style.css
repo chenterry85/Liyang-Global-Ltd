@@ -30,13 +30,13 @@ body, html {
     background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+/* Carousel image */
 .bgimg-1 {
     background-image: url('../image/Low-Res/bike1.jpg');
     min-height: 100%;
 }
 
-/* Second image (NEWS update) */
+/* Second image (MANUFACTURE) */
 .bgimg-2{
   background-image: url("../image/Low-Res/facility.jpg");
   min-height: 400px;
@@ -84,8 +84,20 @@ body, html {
     filter: grayscale(1);
 }
 
-/* Turn off parallax scrolling for tablets and mobiles */
-
+@media screen and (max-width:540px){
+  #main-display-text{
+    font-size: 60px;
+  }
+  #main-display-subtext{
+    font-size:10px;
+  }
+  #browse-btn{
+    width:200px;
+  }
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+    background-attachment: scroll;
+  }
+}
 
 /* About Section */
 #about {
@@ -263,18 +275,6 @@ hr.dash {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (max-width:450px){
-  #main-display-text{
-    font-size: 60px;
-  }
-  #main-display-subtext{
-    font-size:10px;
-  }
-  #browse-btn{
-    width:200px;
-  }
 }
 
 .page-center-display{
