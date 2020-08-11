@@ -45,10 +45,10 @@ function scrollToTop(scrollDuration) {
 }
 
 //Slideshow
-setTimeout(carousel, 500) // Change image every 3 seconds
+setTimeout(carousel, 500) // Change image every .5 seconds
 
 var img_src = ["url('image/Low-Res/bike1.jpg')","url('image/Low-Res/bike2.jpg')","url('image/Low-Res/bike3.jpg')","url('image/Low-Res/bike4.jpg')"]
-var slide_index = 0;
+var slide_index = 0
 
 function carousel() {
   var slideshow = document.getElementsByClassName("mainSlideshow")[0];
@@ -64,7 +64,6 @@ function carousel() {
     dots[i].className = dots[i].className.replace(" dot-active", "");
   }
   dots[slide_index-1].className += " dot-active";
-
 
   setTimeout(carousel, 3000) // Change image every 3 seconds
 }
@@ -85,16 +84,15 @@ function loadMore(){
 
 
 //Replace low resolution image to high resolution
-function upgradeSlideshowResolution(object){
-  let temp_index = object.src.indexOf("bike")
-  let img_num = parseInt(object.src.substring(temp_index + "bike".length , ++temp_index + "bike".length));
-  img_src[img_num - 1] = "url('image/bike" + img_num.toString() + ".jpg')";
+function upgradeSlideshowResolution(index){
+  let num_index = parseInt(index) - 1
+  img_src[num_index] = `url('image/bike${index}.jpg')`
   console.log(img_src)
 }
 
 function upgradeResolution(object){
-  let id = object.id;
-  let target = "bgimg-" + id.substring(12)
+  let id = object.id
+  let target = "bgimg-" + id.substring(21)
   console.log(target)
-  document.getElementsByClassName(target)[0].style.backgroundImage = "url('" + object.src + "')";
+  document.getElementsByClassName(target)[0].style.backgroundImage = `url('${object.src}')`
 }

@@ -54,10 +54,14 @@
     <!-- First Parallax Image MAIN DISPLAY-->
 
     <div class="bgimg-1 w3-display-container w3-opacity-min mainSlideshow">
-      <img src="image/bike1.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
-      <img src="image/bike2.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
-      <img src="image/bike3.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
-      <img src="image/bike4.jpg" class="hidden" onload="upgradeSlideshowResolution(this);"/>
+      <div id="low_resoultion_carousel_placeholder1"></div>
+      <img src="image/bike1.jpg" class="hidden" onload="upgradeSlideshowResolution(1);"/>
+      <div id="low_resoultion_carousel_placeholder2"></div>
+      <img src="image/bike2.jpg" class="hidden" onload="upgradeSlideshowResolution(2);"/>
+      <div id="low_resoultion_carousel_placeholder3"></div>
+      <img src="image/bike3.jpg" class="hidden" onload="upgradeSlideshowResolution(3);"/>
+      <div id="low_resoultion_carousel_placeholder4"></div>
+      <img src="image/bike4.jpg" class="hidden" onload="upgradeSlideshowResolution(4);"/>
     </div>
 
     <div class="page-center-display">
@@ -77,8 +81,6 @@
     </div>
 
 
-
-    </div>
 
     <!-- About section -->
     <div class="w3-content w3-container w3-padding-64" id="about">
@@ -102,11 +104,9 @@
 
 
 
-
-
     <!-- Second Parallax Image FACILITY-->
     <div class="bgimg-2 w3-display-container">
-      <img id="placeholder_2" src="image/facility.jpg" style="display:none;" onload="upgradeResolution(this);">
+      <img id="parallax_placeholder_2" src="image/facility.jpg" class="hidden" onload="upgradeResolution(this);">
       <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-light-grey w3-wide">MANUFACTURE</span>
       </div>
@@ -142,7 +142,7 @@
 
     <!-- Second Parallax Image -->
     <div class="bgimg-3 w3-display-container">
-      <img id="placeholder_3" src="image/news3.jpg" class="hidden" onload="upgradeResolution(this);">
+      <img id="parallax_placeholder_3" src="image/news3.jpg" class="hidden" onload="upgradeResolution(this);">
       <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-light-grey w3-wide">NEWS UPDATE</span>
       </div>
@@ -302,7 +302,7 @@
     <!-- Fourth Parallax Image (Contact) -->
 
     <div class="bgimg-4 w3-display-container" id="contact">
-      <img id="placeholder_4" src="image/contact3.jpg" class="hidden" onload="upgradeResolution(this);">
+      <img id="parallax_placeholder_4" src="image/contact3.jpg" class="hidden" onload="upgradeResolution(this);">
       <div class="w3-display-middle">
         <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
       </div>

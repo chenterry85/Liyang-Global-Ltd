@@ -54,6 +54,26 @@ body, html {
     min-height: 400px;
 }
 
+#low_resoultion_carousel_placeholder1{
+  background-repeat: no-repeat;
+  background-image: url("../image/Low-Res/bike1.jpg");
+}
+
+#low_resoultion_carousel_placeholder2{
+  background-repeat: no-repeat;
+  background-image: url("../image/Low-Res/bike2.jpg");
+}
+
+#low_resoultion_carousel_placeholder3{
+  background-repeat: no-repeat;
+  background-image: url("../image/Low-Res/bike3.jpg");
+}
+
+#low_resoultion_carousel_placeholder4{
+  background-repeat: no-repeat;
+  background-image: url("../image/Low-Res/bike4.jpg");
+}
+
 .w3-wide {letter-spacing: 12px;}
 .w3-hover-opacity {cursor: pointer;}
 
