@@ -84,10 +84,10 @@ function loadMore(){
 
 
 //Replace low resolution image to high resolution
-function upgradeSlideshowResolution(object){
-  let temp_index = object.src.indexOf("/bike")
-  let img_num = parseInt(object.src.substring(temp_index + "/bike".length , ++temp_index + "/bike".length));
-  img_src[img_num - 1] = "url('image/bike" + img_num.toString() + ".jpg')";
+function upgradeSlideshowResolution(index){
+  let num_index = parseInt(index) - 1
+  console.log(index)
+  img_src[num_index] = "url('image/bike" + index + ".jpg')";
   console.log(img_src)
 }
 
